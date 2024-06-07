@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CleanTracker</title>
+
+  <link rel="icon" href="img/ocean.png" type="image/x-icon">
+
+  <!-- Gráficos -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+
+</head>
+
+<body>
+  <!-- Header -->
+  <div class="header">
+    <nav class="navbar navbar-expand-lg">
+      <a class="navbar-brand" href="index.html">CleanTracker</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="html/formulario.html">Formulário</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+</div>
+
+  <!-- Carroseul -->
+  <div id="carroseul">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100 slide" src="img/Empresa de reciclgaem.jpg" alt="Primeiro Slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100 slide" src="img/empresa de reci ef87c292-3a6a-44e8-a0fd-74cddf0653eb.png" alt="Segundo Slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100 slide" src="img/LixosNaPraia.jpg" alt="Terceiro Slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Informações -->
+  <div id="main">
+    <div class="container-fluid container-cards">
+      <div class="row row-cards justify-content-center">
+        <div class="col-sm-4 d-flex justify-content-center">
+          <div class="card bg-transparent border-0 text-white text-center">
+            <img class="card-img-top" src="img/monitor.png" alt="Imagem de capa do card">
+            <div class="card-body">
+              <h4 class="titulo-card">Monitoramento da Poluição</h4>
+              <p class="text-card text-center">Monitoramento do lixo em locais diversos ao longo do tempo, para identificar áreas críticas e orientar esforços de limpeza.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4 d-flex justify-content-center">
+          <div class="card bg-transparent border-0 text-white text-center">
+            <img class="card-img-top" src="img/idea.png" alt="Imagem de capa do card">
+            <div class="card-body">
+              <h4 class="titulo-card">Educação e Conscientização</h4>
+              <p class="text-card text-center">Plataforma educacional interativa que forneça informações sobre os impactos da
+                poluição marinha e como as pessoas podem ajudar.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4 d-flex justify-content-center">
+          <div class="card bg-transparent border-0 text-white text-center">
+            <img class="card-img-top" src="img/social-justice.png" alt="Imagem de capa do card">
+            <div class="card-body">
+              <h4 class="titulo-card">Engajamento da Comunidade</h4>
+              <p class="text-card text-center">Os usuários registram suas próprias atividades de limpeza costeira, adicionando dados
+                sobre a quantidade de lixo recolhido e a localização.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- info -->
+    <hr class="hr-divisao">
+
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md-7 d-flex flex-column justify-content-start">
+          <h2 class="titulo-info"> Luta contra a poluição <span class="titulo-info-muted">Transforme dados em ação com a
+              Clean Tracker.</span></h2>
+          <p class="lead">Nosso objetivo é capacitar todos a contribuírem para um meio ambiente mais limpo, oferecendo ferramentas de monitoramento precisas, educação ambiental interativa e um espaço para engajamento comunitário.</p>
+        </div>
+        <div class="col-md-5 d-flex justify-content-cente ">
+          <img class="bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" width="500" height="500"
+            src="img/istockphoto-1179252602-1024x1024.jpg" alt="Image description">
+        </div>
+      </div>
+    </div>
+
+    <hr class="hr-divisao">
+
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md-7 order-md-2 d-flex flex-column justify-content-start px-4">
+          <h2 class="titulo-info">Clean Tracker <span class="titulo-info-muted">Unindo tecnologia e comunidade para um
+              oceano livre de poluição.</span></h2>
+          <p class="lead"> Para ajudar na luta contra a poluição no oceano <a href="formulario.html"> Clique aqui </a> </p>
+        </div>
+        <div class="col-md-5 order-md-1 d-flex justify-content-center px-4">
+          <img class="bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" width="500" height="500"
+            src="img/pexels-marta-ortigosa-1877261-3480494.jpg" alt="Image description">
+        </div>
+      </div>
+    </div>
+
+    <hr class="hr-footer">
+  </div>
+
+  <div class="footer">
+    <div class="container text-center">
+      <span>&copy; 2024  Clear Tracker developed by Gabriel Ferreira,Mateus Carvalho, Murilo Gazzoni, Renan Soares</span>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

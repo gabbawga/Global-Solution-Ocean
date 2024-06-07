@@ -1,0 +1,39 @@
+/* Custom styles for centering the form */
+.form-container {
+    background-color: #014D54;
+    padding: 100px;
+}
+
+.form-box {
+    background-color: #7EBBC2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.hr-parte{
+    margin: 0;
+    background-color: #7EBBC2;
+    border-width: 30px; 
+}
+
+#graficos{
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+#table{
+    background-color: #014D54;
+    color: #E0E4E7;
+    font-family: 'Nunito', sans-serif;
+    font-size: 24px;
+}
+
+.table{
+    margin: 0;
+}

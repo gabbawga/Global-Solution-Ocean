@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+    <!-- Gráficos -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/styleForm.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="header">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="index.html">CleanTracker</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Início</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="formulario.html">Formulário</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div id="form">
+        <!-- Formulário -->
+        <div class="container-fluid form-container d-flex align-items-center justify-content-center ">
+            <div class="form-box p-4">
+                <h2 class="text-center">Insira os Dados</h2>
+                <div class="form-group">
+                    <label for="local">Local:</label>
+                    <input type="text" class="form-control" id="local" placeholder="Local">
+                </div>
+                <div class="form-group">
+                    <label for="quantidade">Quantidade de Lixo Reciclado:</label>
+                    <input type="number" class="form-control" id="quantidade" placeholder="Quantidade">
+                </div>
+                <div class="form-group">
+                    <label for="data">Data do Registro:</label>
+                    <input type="month" class="form-control" id="data" placeholder="Data">
+                </div>
+                <button class="btn btn-primary btn-block" onclick="adicionarDados()">Adicionar Dados</button>
+                <button class="btn btn-danger btn-block" onclick="limparDados()">Limpar Dados</button>
+            </div>
+        </div>
+    </div>
+
+    <hr class="hr-parte">
+
+    <div id="graficos">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-4">
+                    <div id="chart-container">
+                        <canvas id="grafPorMes" width="400" height="400"></canvas>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                </div>
+                <div class="col-md-4">
+                    <div id="chart-container">
+                        <canvas id="grafPorLocal" width="400" height="400"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr class="hr-parte">
+
+    <div id="table">
+        <table id="tabelaDados" class="table table-borderless">
+            <thead>
+                <tr>
+                    <th>Local</th>
+                    <th>Quantidade</th>
+                    <th>Data</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+    </div>
+
+    <hr class="hr-parte">
+
+    <div class="footer">
+        <div class="container text-center">
+            <span>&copy; 2024 Clear Tracker developed by <a href="#">Gabriel Ferreira, </a></span>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
